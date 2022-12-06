@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <link rel="stylesheet" href="style/style.css">
+    <script defer src="scripts/page-load.js"></script>
+</head>
+<body>
+<div class="wrapper">
+    <head class="head">
+        <div class="logo">
+            <h1 class="logo-text">Jabri Muhi's<br>ITMO Blog</h1>
+        </div>
+    </head>
+    <main class="main">
+        <!-- navigation panel (menubar) -->
+        <nav class="menubar">
+            <ul>
+                <li>
+                    <a href="index.html">Главная</a>
+                </li>
+                <li>
+                    <a href="about-me.html">Кто я?</a>
+                </li>
+                <li>
+                    <a href="to-do-generator.html">To-Do лист</a>
+                </li>
+                <li>
+                    <a href="contacts.html">Контакты</a>
+                </li>
+            </ul>
+        </nav>
+        <!-- site content -->
+        <div class="main-content">
+            <h1 class="main-h">Лабораторная работа №3</h1>
+            <div class="content-section">
+                <p>В лабораторной работе было необходимо написать адаптивную версию, которую я, собственно, написал.
+                    Адаптивная версия лишилась футера, а также боковой панели, кроме
+                    навигационной панели, те были выставлены на верх сайта в адаптивной версии. Почти всё прошло без
+                    проблем, разве что некоторые стили пришлось переписывать под адаптивную версию.</p>
+                <p>Ещё, как можно заметить, стиль всего сайта был изменен. Связано это с тем, что подобрать цвета для
+                    очень белого фона тяжело, учитывая мою любовь к не самым ярким цветам, было принято решение
+                    переписать сайт на "темную версию".
+                    Перенос оказался не слишком затруднительным, однако в будущем хотелось бы сделать возможность смены
+                    цветового режима сайта, т.к. писать совсем отдельный сайт для светлой темы не хочется, да и никто так
+                    не делает.</p>
+                <p>Также требовалось написать таблицу, которая должна быть grid'ом, поэтому я решил сделать таблицу моих
+                    трат начиная с 18 октября 2022 года.
+                    Как можно заметить, я очень люблю есть... (трат после 23 октября действительно не было, я не выходил
+                    из дома)))))))</p>
+                <hr>
+                <div class="table-style">
+                    <div class="column-name">Дата</div>
+                    <div class="column-name">Еда</div>
+                    <div class="column-name">Транспорт</div>
+                    <div class="column-name">Игры*</div>
+                    <div class="column-name">Кролик</div>
+                    <div class="column-name">Итого</div>
+
+                    <div>18.10.2022</div>
+                    <div>565 р</div>
+                    <div>0</div>
+                    <div>0</div>
+                    <div>0</div>
+                    <div>565 р</div>
+
+                    <div>19.10.2022</div>
+                    <div>660 р</div>
+                    <div>0</div>
+                    <div>21 р</div>
+                    <div>0</div>
+                    <div>681 р</div>
+
+                    <div>20.10.2022</div>
+                    <div>890 р</div>
+                    <div>0</div>
+                    <div>0</div>
+                    <div>0</div>
+                    <div>890 р</div>
+
+                    <div>21.10.2022</div>
+                    <div>1356 р</div>
+                    <div>387 р</div>
+                    <div>150 р</div>
+                    <div>105 р</div>
+                    <div>1998 р</div>
+
+                    <div>22.10.2022</div>
+                    <div>424 р</div>
+                    <div>222 р</div>
+                    <div>0</div>
+                    <div>0</div>
+                    <div>646 р</div>
+
+                    <div>23.10.2022</div>
+                    <div>1177 р</div>
+                    <div>0</div>
+                    <div>0</div>
+                    <div>0</div>
+                    <div>1177 р</div>
+
+                </div>
+            </div>
+
+        </div>
+
+    </main>
+    <footer class="footer">
+        <p class="footer-p">© Зюлин И.М. М33101 <a href="https://t.me/JabriMuhi"><img
+                src="images/Telegram_2019_Logo.svg.webp" alt="" style="width: 50px"></a></p>
+        <p id="page-load"></p>
+    </footer>
+</div>
+</body>
+</html>

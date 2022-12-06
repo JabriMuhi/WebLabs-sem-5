@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog</title>
+  <link rel="stylesheet" href="style/style.css">
+  <script defer src="scripts/page-load.js"></script>
+</head>
+<body>
+<div class="wrapper">
+  <head class="head">
+    <div class="logo">
+      <h1 class="logo-text">Jabri Muhi's<br>ITMO Blog</h1>
+    </div>
+  </head>
+  <main class="main">
+    <!-- navigation panel (menubar) -->
+    <nav class="menubar">
+      <ul>
+        <li>
+          <a href="index.html">Главная</a>
+        </li>
+        <li>
+          <a href="about-me.html">Кто я?</a>
+        </li>
+        <li>
+          <a href="contacts.html">Контакты</a>
+        </li>
+      </ul>
+    </nav>
+    <!-- site content -->
+    <div class="main-content">
+
+      <div class="content-section" style="position: relative">
+        <input type="input" id="rm-value" placeholder="Номер персонажа"/>
+        <button id="btn">+</button>
+        <div id="rick-morty">
+
+        </div>
+      </div>
+
+    </div>
+
+  </main>
+  <footer class="footer">
+    <p class="footer-p">© Зюлин И.М. М33101 <a href="https://t.me/JabriMuhi"><img src="images/Telegram_2019_Logo.svg.webp" alt="" style="width: 50px"></a></p>
+    <p id="page-load"></p>
+  </footer>
+</div>
+<script src="scripts/mock-api.js"></script>
+<script>
+  window.onload = function () {
+    document.body.classList.add('loaded_hiding');
+    window.setTimeout(function () {
+      document.body.classList.add('loaded');
+      document.body.classList.remove('loaded_hiding');
+    }, 500);
+  }
+</script>
+</body>
+</html>

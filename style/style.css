@@ -1,0 +1,299 @@
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+html,
+body{
+    height: 100%;
+    background-color: #0a0c10;
+    color: #f0f3f6;
+}
+
+.wrapper{
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.header{
+    justify-content: center;
+}
+
+.logo{
+    background-color: #272b33;
+    width: 100%;
+    min-height: 150px;
+}
+
+.logo-text{
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 61px;
+}
+
+.main{
+    flex: 1 1 auto;
+}
+
+.main-content{
+    margin-top: 15px;
+    float: left;
+    width: 86%;
+    overflow: auto;
+}
+
+.main-h {
+    text-align: center;
+    font-size: 45px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.blog-section-h {
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+}
+
+.link-section {
+    text-decoration: none;
+    color: black;
+}
+
+.link-section:hover {
+    text-decoration: none;
+    color: black;
+}
+
+.link-section:active {
+    text-decoration: none;
+    color: black;
+}
+
+.blog-section-p {
+    text-align: center;
+    font-size: 25px;
+    color: #f0f3f6;
+}
+
+.link-section-blog hr{
+    height: 2px;
+    background-color: #f0f3f6;
+    border-radius: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.link-section-blog {
+    width: 99%;
+    border: 7px solid #7a828e;
+    border-radius: 5px;
+    margin-top: 15px;
+}
+
+.content-section{
+    width: 99%;
+    border: 7px solid #7a828e;
+    border-radius: 5px;
+    margin-top: 15px;
+    overflow: auto;
+    float: left;
+}
+
+
+.menubar{
+    float: right;
+    background-color: #272b33;
+    width: 13%;
+    margin-top: 15px;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 2em;
+    overflow: auto;
+}
+
+.menubar a {
+    text-decoration: none;
+    color: #7a828e;
+}
+
+.menubar a:hover {
+    text-decoration: none;
+    color: #f0f3f6;
+}
+
+.menubar ul {
+    background-color: #272b33;
+}
+
+.menubar li{
+    list-style-type: none;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.menubar .active-link {
+    color: white;
+}
+
+.footer{
+    margin-top: 15px;
+    background-color: #272b33;
+    width: 100%;
+    min-height: 150px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.footer-p{
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    margin-top: 30px;
+    font-size: 30px;
+}
+
+.phone-number {
+    text-decoration: none;
+    color: #f0f3f6;
+}
+
+.phone-number:hover {
+    color: #7a828e;
+}
+
+.contacts {
+    font-size: 25px;
+    margin-left: 20px;
+    text-indent: 0px;
+}
+
+.my-photo {
+    width: 30%;
+    border-radius: 5px;
+    filter: drop-shadow(0 0 0.75rem black);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.about-me-p {
+    text-align: center;
+    font-size: 25px;
+}
+
+.content-section p{
+    font-size: 22px;
+    margin: 10px 20px 10px 20px;
+    text-indent: 25px;
+}
+
+.table-style {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    padding-bottom: 10px;
+}
+
+.todo-generator {
+    margin-left: 10px;
+}
+
+.todo-generator ul{
+    list-style-type: disc;
+    margin-bottom: 10px;
+}
+
+.todo-generator li {
+    font-size: 25px;
+    margin-left: 25px;
+    margin-top: 15px;
+}
+
+#btn, #todo {
+    background-color: #272b33;
+    border: none;
+    color: #f0f3f6;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 5px;
+    font-size: 20px;
+}
+
+#page-load {
+    font-size: 20px;
+}
+
+
+
+@media only screen
+and (min-device-width : 52px)
+and (max-device-width : 1250px){
+    .header{
+        width: 100%;
+    }
+
+    .menubar{
+        float: none;
+        width: 100%;
+        font-size: 2.5em;
+    }
+
+    .main-content{
+        width: 100%;
+    }
+
+    .blog-section-h{
+        font-size: 2.7em;
+    }
+
+    .blog-section-p{
+        font-size: 2.2em;
+    }
+
+    .content-section .about-me-p{
+        font-size: 2.2em;
+    }
+
+    .content-section .contacts{
+        font-size: 2.2em;
+    }
+
+    .content-section p{
+        font-size: 2.2em;
+    }
+
+    .footer{
+        display: none;
+    }
+}
+
+#preloader {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 999;
+    width: 100%;
+    height: 100%;
+    overflow: visible;
+    background: #fbfbfb url('//cdnjs.cloudflare.com/ajax/libs/file-uploader/3.7.0/processing.gif') no-repeat center center;
+}
+
+.visible {
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 2s linear;
+}
+
+.hidden {
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s 2s, opacity 2s linear;
+}
