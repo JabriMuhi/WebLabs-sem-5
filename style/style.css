@@ -216,6 +216,7 @@ body{
 
 .rick-and-morty {
     width: 100%;
+    overflow: auto;
 }
 
 #btn, #todo, #rm-name {
@@ -262,6 +263,7 @@ body{
 #character-first-episode a:hover {
     color: #7a828e;
 }
+
 
 
 
