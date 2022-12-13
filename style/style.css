@@ -99,7 +99,7 @@ body{
 }
 
 .content-section{
-    width: 99%;
+    width: 98%;
     border: 7px solid #7a828e;
     border-radius: 5px;
     margin-top: 15px;
@@ -214,7 +214,11 @@ body{
     margin-top: 15px;
 }
 
-#btn, #todo {
+.rick-and-morty {
+    width: 100%;
+}
+
+#btn, #todo, #rm-name {
     background-color: #272b33;
     border: none;
     color: #f0f3f6;
@@ -225,10 +229,38 @@ body{
     font-size: 16px;
     border-radius: 5px;
     font-size: 20px;
+    margin-left: 10px;
 }
 
 #page-load {
     font-size: 20px;
+}
+
+#character-image img {
+    margin-top: 10px;
+    width: 30%;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+
+#character-name {
+    font-size: 45px;
+    margin-left: 25px;
+    font-weight: bold;
+}
+
+#character-status-type, #character-origin, #character-gender, #character-first-episode {
+    font-size: 25px;
+    margin-left: 25px;
+}
+
+#character-first-episode a{
+    text-decoration: none;
+    color: #f0f3f6;
+}
+
+#character-first-episode a:hover {
+    color: #7a828e;
 }
 
 
@@ -246,6 +278,7 @@ and (max-device-width : 1250px){
         font-size: 2.5em;
     }
 
+
     .main-content{
         width: 100%;
     }
@@ -256,6 +289,10 @@ and (max-device-width : 1250px){
 
     .blog-section-p{
         font-size: 2.2em;
+    }
+
+    .content-section {
+        width: 97%;
     }
 
     .content-section .about-me-p{
@@ -270,10 +307,34 @@ and (max-device-width : 1250px){
         font-size: 2.2em;
     }
 
+    .link-section-blog{
+        width: 98.5%;
+    }
+
     .footer{
         display: none;
     }
 }
+
+@media only screen
+and (min-device-width : 52px)
+and (max-device-width : 600px) {
+    #rm-name {
+        width: 85.5%;
+        margin-left: 0;
+    }
+    #btn {
+        width: 100%;
+        margin-left: 0;
+        margin-top: 5px;
+    }
+
+    .rick-and-morty {
+        width: 100%;
+    }
+
+}
+
 
 #preloader {
     position: absolute;
