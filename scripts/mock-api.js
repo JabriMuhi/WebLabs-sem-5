@@ -7,13 +7,9 @@ btn.addEventListener("click", () => {
     if (txt === "") {
         alert("Введите имя персонажа");
     } else {
-        loadData(txt).then(setTimeout(() => {
-        //let preloaderEl = document.getElementById('preloader');
-        preloaderEl.classList.add('hidden');
-        preloaderEl.classList.remove('visible');
-
-    }), 1500);
-
+        preloaderEl.classList.remove('hidden');
+        preloaderEl.classList.add('visible');
+        loadData(txt);
     }
 });
 
@@ -51,6 +47,8 @@ async function loadData(name) {
         document.getElementById("character-first-episode").innerHTML = firstEpisodeHTML + " (click)";
 
         console.log(firstEpisodeHTML)
+        preloaderEl.classList.add('hidden');
+        preloaderEl.classList.remove('visible');
     } else {
         alert("Ошибка HTTP: " + response.status);
     }
